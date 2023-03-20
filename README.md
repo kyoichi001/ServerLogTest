@@ -105,10 +105,10 @@ Nは3であり、10.20.30.1/16は20201019133126から20201019133128まで3回連
 
 コードは以下の要素で構成されています。
 - 基本的な機能のための関数・クラス
-    - IPアドレスを表す Address 構造体
-    - サーバーログを表す Log 構造体
-    - 日付の文字列 → timestampへの変換を行う DateToTimestamp
-    - timestamp → 日付の文字列への変換を行う TimestampToDate
+    - IPアドレスを表す `Address` 構造体
+    - サーバーログを表す `Log` 構造体
+    - 日付の文字列 → `timestamp` への変換を行う `DateToTimestamp`
+    - `timestamp` → 日付の文字列への変換を行う `TimestampToDate`
 - 各設問を実行する関数
     - `GetBrokenServers1`
     - `GetBrokenServers2`
@@ -128,20 +128,20 @@ Nは3であり、10.20.30.1/16は20201019133126から20201019133128まで3回連
 |設問1|`in/test_1_2_in.txt`|2つのサーバーで故障した場合|
 |設問1|`in/test_1_3_in.txt`|2つのサーバーで、一つ復活し、また故障した場合|
 |設問1|`in/test_1_4_in.txt`|2つのサーバーで、故障したままログが終了した場合|
-|設問2|`in/test_2_0_in.txt`|test_1_0と同じ（N=1）|
-|設問2|`in/test_2_1_in.txt`|test_1_1と同じ（N=1）|
-|設問2|`in/test_2_2_in.txt`|test_1_2と同じ（N=1）|
-|設問2|`in/test_2_3_in.txt`|test_1_3と同じ（N=1）|
-|設問2|`in/test_2_4_in.txt`|test_1_4と同じ（N=1）|
+|設問2|`in/test_2_0_in.txt`|`in/test_1_0_in.txt`と同じ（N=1）|
+|設問2|`in/test_2_1_in.txt`|`in/test_1_1_in.txt`と同じ（N=1）|
+|設問2|`in/test_2_2_in.txt`|`in/test_1_2_in.txt`と同じ（N=1）|
+|設問2|`in/test_2_3_in.txt`|`in/test_1_3_in.txt`と同じ（N=1）|
+|設問2|`in/test_2_4_in.txt`|`in/test_1_4_in.txt`と同じ（N=1）|
 |設問2|`in/test_2_5_in.txt`|2回まで連続して応答なしの場合（N=3）|
 |設問2|`in/test_2_6_in.txt`|3回まで連続して応答なしの場合（N=3）|
-|設問3|`in/test_3_0_in.txt`|test_2_0と同じ（N=1, m=1, t=3）|
-|設問3|`in/test_3_1_in.txt`|test_2_1と同じ（N=1, m=1, t=3）|
-|設問3|`in/test_3_2_in.txt`|test_2_2と同じ（N=1, m=1, t=3）|
-|設問3|`in/test_3_3_in.txt`|test_2_3と同じ（N=1, m=1, t=3）|
-|設問3|`in/test_3_4_in.txt`|test_2_4と同じ（N=3, m=1, t=3）|
-|設問3|`in/test_3_5_in.txt`|test_2_5と同じ（N=3, m=1, t=3）|
-|設問3|`in/test_3_6_in.txt`|test_2_6と同じ（N=3, m=1, t=3）|
+|設問3|`in/test_3_0_in.txt`|`in/test_2_0_in.txt`と同じ（N=1, m=1, t=3）|
+|設問3|`in/test_3_1_in.txt`|`in/test_2_1_in.txt`と同じ（N=1, m=1, t=3）|
+|設問3|`in/test_3_2_in.txt`|`in/test_2_2_in.txt`と同じ（N=1, m=1, t=3）|
+|設問3|`in/test_3_3_in.txt`|`in/test_2_3_in.txt`と同じ（N=1, m=1, t=3）|
+|設問3|`in/test_3_4_in.txt`|`in/test_2_4_in.txt`と同じ（N=3, m=1, t=3）|
+|設問3|`in/test_3_5_in.txt`|`in/test_2_5_in.txt`と同じ（N=3, m=1, t=3）|
+|設問3|`in/test_3_6_in.txt`|`in/test_2_6_in.txt`と同じ（N=3, m=1, t=3）|
 |設問3|`in/test_3_7_in.txt`|1つのサーバーで障害なし、過負荷が発生した場合。（N=1, m=1, t=5）|
 |設問3|`in/test_3_8_in.txt`|1つのサーバーで障害なし、過負荷が発生した場合。（N=1, m=3, t=5）|
 |設問3|`in/test_3_9_in.txt`|2つのサーバーで障害あり、過負荷が発生した場合。（N=1, m=1, t=5）|
